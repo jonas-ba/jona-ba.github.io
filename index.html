@@ -6,6 +6,8 @@
     <title>Personal Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Updated FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -23,14 +25,23 @@
             margin-top: 20px;
             border-radius: 10px;
             backdrop-filter: blur(10px);
-            background: linear-gradient(135deg, #302b63, #1e202f); /* Example gradient */
+            background: linear-gradient(135deg, #1f1b4d, #191a24); /* Example gradient */
         }
         /* Additional gradient styles from second HTML for different sections */
         .neumorphic-container.research {
-            background: linear-gradient(155deg, #312c64, #20232a);
+            background: linear-gradient(155deg, #2e2a57, #181b1f);
         }
         .neumorphic-container.publications {
-            background: linear-gradient(125deg, #322d65, #232634);
+            background: linear-gradient(125deg, #2f2b5c, #1b1d26);
+        }
+        a.icon {
+            color: white; /* Icon color */
+            margin: 10px; /* Spacing around icons */
+            font-size: 24px; /* Icon size */
+        }
+        a.icon:hover {
+            color: #d4d4ff; /* Hover color */
+            transition: color 0.3s;
         }
     </style>
 </head>
@@ -40,13 +51,16 @@
             <h1 class="text-6xl font-semibold">Jonas Ballweg</h1>
             <p class="text-xl">PhD Student</p>
             <p class="text-xl">Hong Kong University of Science and Technology (HKUST)</p>
-            <p><a href="mailto:jonas.ballweg@tum.de" class="hover:text-purple-300 transition duration-300">jonas.ballweg@tum.de</a></p>
-            <p><a href="https://www.linkedin.com/in/jonas-ballweg" class="hover:text-purple-300 transition duration-300">linkedin.com/in/jonas-ballweg</a></p>
-            <p>Email: <a href="https://github.com/jonasballweg" class="hover:text-purple-300 transition duration-300">github.com/jonasballweg</a></p>
+            <!-- Updated icon links -->
+            <p>
+                <a href="mailto:jonas.ballweg@tum.de" class="icon hover:text-purple-300 transition duration-300"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/jonas-ballweg" class="icon hover:text-purple-300 transition duration-300"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/jonasballweg" class="icon hover:text-purple-300 transition duration-300"><i class="fa-brands fa-github"></i></a>
+            </p>
         </section>
         <section class="neumorphic-container research">
-            <h2 class="text-4xl font-semibold">Research</h2>
-            <p>I am a PhD student at HKUST, where I am part of the research group called ALPACAS (Algorithms, Logic, Program Analysis, Cryptocurrencies And Smart contracts). My supervisors are Amir K. Goharshady and Dimitris Papadopoulos.</p>
+            <h2 class="text-4xl font-semibold">Education</h2>
+            <p>I am a PhD student at HKUST, where I am part of the research group called <a href="https://amir.goharshady.com/alpacas-research-group" class="hover:text-purple-300 transition duration-300">ALPACAS (Algorithms, Logic, Program Analysis, Cryptocurrencies And Smart contracts)</a>. My supervisors are <a href="https://amir.goharshady.com/" class="hover:text-purple-300 transition duration-300">Amir K. Goharshady</a> and <a href="https://www.cse.ust.hk/~dipapado/" class="hover:text-purple-300 transition duration-300">Dimitris Papadopoulos</a>. I have a Bachalor of Science in Informatics from Technical University of Munich (TUM)</p>
         </section>
         <section class="neumorphic-container publications">
             <h2 class="text-4xl font-semibold">Publications</h2>
